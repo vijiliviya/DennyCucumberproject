@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3731518655,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitializeTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Test login with valid credentials",
+        "description": "",
+        "id": "test-saas-smoke-scenario;test-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 164305305,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2412710283,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open chrome and start application",
+            "match": {
+              "location": "SAASApplication.open_chrome_and_start_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 346854586,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter admin username and password",
+            "match": {
+              "location": "SAASApplication.user_enter_admin_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 260711298926,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:45)\r\n\tat com.app.commonFunctionsLibrary.CommonFunctions.selectDropdown(CommonFunctions.java:150)\r\n\tat pages.SAAS_Page.createOrganization(SAAS_Page.java:97)\r\n\tat stepDefination.SAASApplication.User_able_to_create_new_organization(SAASApplication.java:35)\r\n\tat ✽.And User able to create new organization(SAASApplication.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User able to create new organization",
+            "match": {
+              "location": "SAASApplication.User_able_to_create_new_organization()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user should able to see the created organization",
+            "match": {
+              "location": "SAASApplication.user_should_able_to_see_the_created_organization()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test SAAS smoke scenario",
+    "description": "",
+    "id": "test-saas-smoke-scenario",
+    "keyword": "Feature",
+    "uri": "SAASApplication.feature"
+  }
+]

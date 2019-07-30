@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="267.366688">
+<testcase classname="Test SAAS smoke scenario" name="Test login with valid credentials" time="267.366688">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)&#13;&#10;&#9;at com.app.commonFunctionsLibrary.CommonFunctions.selectDropdown(CommonFunctions.java:150)&#13;&#10;&#9;at pages.SAAS_Page.createOrganization(SAAS_Page.java:97)&#13;&#10;&#9;at stepDefination.SAASApplication.User_able_to_create_new_organization(SAASApplication.java:35)&#13;&#10;&#9;at ✽.And User able to create new organization(SAASApplication.feature:6)&#13;&#10;"><![CDATA[Given Open chrome and start application.....................................passed
+When User enter admin username and password.................................passed
+And User able to create new organization....................................failed
+Then user should able to see the created organization.......................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
+	at com.app.commonFunctionsLibrary.CommonFunctions.selectDropdown(CommonFunctions.java:150)
+	at pages.SAAS_Page.createOrganization(SAAS_Page.java:97)
+	at stepDefination.SAASApplication.User_able_to_create_new_organization(SAASApplication.java:35)
+	at ✽.And User able to create new organization(SAASApplication.feature:6)
+]]></failure>
+</testcase>
+</testsuite>
